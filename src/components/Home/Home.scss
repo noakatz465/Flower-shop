@@ -1,0 +1,155 @@
+/* Home.scss */
+
+.home-container {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    // background-image: url('../../../public/home4.jpg'); /* החלף בנתיב לתמונת הרקע שלך */
+    // color: white;
+    // text-align: center;
+    // padding: 40px 20px;
+    // width: 100%;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+.main-content {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.features-section,
+.cta-section,
+.testimonials-section,
+.offers-section {
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.features-section .feature,
+.testimonials-section .testimonial,
+.offers-section .offer {
+    margin-bottom: 20px;
+}
+
+.features-section .feature img,
+.testimonials-section .testimonial img,
+.offers-section .offer img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.features-section .feature .feature-title,
+.testimonials-section .testimonial .testimonial-title,
+.offers-section .offer .offer-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.features-section .feature .feature-description,
+.testimonials-section .testimonial .testimonial-description,
+.offers-section .offer .offer-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.cta-section {
+    margin-top: 40px;
+}
+
+.cta-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    width: 100%;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.features-section,
+.cta-section,
+.testimonials-section,
+.offers-section {
+    animation: slideIn 1s forwards;
+}
+.offers-section {
+    color: white;
+    background-image: url('../../../public/_6c00e30c-bdff-4897-b9ac-3a0765534acf.jpg')
+}
+
+.features-section {
+    animation-delay: 0.2s;
+}
+
+.cta-section {
+    animation-delay: 0.4s;
+}
+
+.testimonials-section {
+    animation-delay: 0.6s;
+}
+
+.offers-section {
+    animation-delay: 0.8s;
+}

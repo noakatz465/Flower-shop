@@ -1,0 +1,41 @@
+.Zer {
+    direction: rtl; // הגדרת כיוון כתיבה מימין לשמאל
+  
+    .Zer-img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .Zer-name {
+      direction: rtl;
+      font-size: 2em;
+      font-weight: bold;
+    }
+  
+    .Zer-price {
+      font-size: 1.5em;
+      color: green;
+    }
+  
+    .Zer-types-title {
+      margin-top: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  
+    .Zer-types {
+      direction: rtl;
+      list-style-type: none;
+      padding: 0;
+  
+      li {
+        font-size: 1em;
+        margin: 5px 0;
+      }
+    }
+  
+    .btn {
+      margin-top: 20px;
+    }
+  }
+  

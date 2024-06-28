@@ -1,0 +1,140 @@
+.NavBar {
+  background-color: white;
+
+  .navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar-logo {
+    height: 50px; /* Adjust the height as needed */
+    cursor: pointer;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+    .search-container {
+      margin: 6px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .search-input {
+      padding-left: 30px; /* Adjust padding to make room for the icon */
+    }
+
+    .cart-button {
+      display: flex;
+      align-items: center;
+      border: none;
+      background: none;
+      color: #6c757d;
+      margin-left: auto; /* Move the cart icon to the far right */
+    }
+
+    .cart-icon {
+      font-size: 1.5rem; /* Adjust size as needed */
+    }
+
+    .user-icon {
+      font-size: 1.5rem; /* Adjust size as needed */
+      color: #6c757d;
+      margin-left: 15px; /* Add margin between cart and user icon */
+    }
+  }
+
+  .navbar-categories {
+    direction: rtl; /* Right-to-left text direction */
+    padding: 10px 0;
+    background-color: #f8f9fa; /* Light grey background for categories */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+    .nav-link {
+      margin-right: 15px;
+      padding: 10px 15px; /* Add padding for better spacing */
+      color: #343a40; /* Dark text color */
+      text-decoration: none; /* Remove underline */
+      border-radius: 5px; /* Rounded corners */
+
+      &:hover {
+        background-color: #e9ecef; /* Light grey background on hover */
+        color: #007bff; /* Blue text color on hover */
+        text-decoration: none; /* Remove underline */
+      }
+
+      &.active {
+        background-color: #007bff; /* Blue background for active link */
+        color: white; /* White text for active link */
+      }
+    }
+  }
+
+  .alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    min-width: 200px;
+    z-index: 1050; /* High z-index to ensure the alert is above all content */
+  }
+
+  .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+  }
+
+  .alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+  }
+}
+
+.footer {
+  background-color: #343a40; // Dark background color
+  color: #ffffff; // White text color
+  padding: 20px 0;
+  direction: rtl; // Right-to-left text direction
+
+  .footer-column {
+    margin-bottom: 20px;
+  }
+
+  h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .footer-link {
+    color: #f8f9fa; // Link color
+    text-decoration: none;
+
+    &:hover {
+      color: #adb5bd; // Link color on hover
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+  }
+}

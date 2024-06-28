@@ -1,0 +1,25 @@
+.Cart {
+    padding: 20px;
+    h2 {
+        direction: rtl;
+        text-align: right;
+      }
+  }
+  .Cart .empty-cart {
+    width: 20%;
+    margin-left: 40%;
+    padding: 20px;
+    border: 2px dashed #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    // margin: 20px;
+  }
+  
+  .Cart .empty-cart h3 {
+    color: #666;
+  }
+  .flower-img {
+    width: 100px;
+    height: auto;
+  }
+  
